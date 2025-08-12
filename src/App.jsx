@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>CrowdFunded Investment</h1>
+      <h1 className='bg-[red]'>CrowdFunded Investment</h1>
     </>
   )
 }
