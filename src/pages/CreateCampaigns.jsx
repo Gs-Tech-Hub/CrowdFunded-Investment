@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { categories } from '../data/categories'
 
-const Campaigns = () => {
+const CreateCampaigns = () => {
     const [selectFile, setselectFile] = useState('Browse File')
     const [selectedCategory, setSelectedCategory] = useState("");
 
@@ -13,7 +13,7 @@ const Campaigns = () => {
         <div>
             <div>
                 <h1 className='text-center text-[1.8rem] my-[1rem] font-bold'>Create Campaigns</h1>
-                <div className='text-center w-[60%] m-[auto] mt-[9rem]'>
+                <div className='text-center w-[90%] m-[auto] mt-[9rem]'>
                     <input type='text' placeholder='Campaign Title' className='bg-[none] outline-none px-[1rem] mb-[2.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-[2rem] border-[lightgray]' />
                     <input type='text' placeholder='Campaign goal' className='bg-[none] outline-none px-[1rem] mb-[2.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-[2rem] border-[lightgray]' />
                     <input type='number' placeholder='Campaign amount goal in &#8358;' className='bg-[none] outline-none px-[1rem] mb-[2.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-[2rem] border-[lightgray]' />
@@ -58,4 +58,4 @@ const Campaigns = () => {
     )
 }
 
-export default Campaigns
+export default CreateCampaigns

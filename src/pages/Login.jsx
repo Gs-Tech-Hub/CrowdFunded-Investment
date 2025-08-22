@@ -33,31 +33,32 @@ const Login = () => {
             <div className='flex justify-center'>
                 <div className='border-[1px] border-[lightgray] w-[26rem] mt-[9rem] pb-[2rem] rounded-[0.5rem] max-[493px]:w-[90%]'>
                     <div className='flex items-center justify-evenly mb-[3rem]'>
-                        <h1 onClick={(e) => setSMEsOnboarding(!SMEsOnboarding)} className={SMEsOnboarding ? 'bg-[#f0f0fa] w-[50%] py-[1rem] text-center cursor-pointer rounded-tl-[0.5rem] text-[blue] border-b-[1px] border-[#6a6afb]' : 'w-[50%] py-[1rem] text-center cursor-pointer'} >SMEs</h1>
-                        <h1 onClick={(e) => setSMEsOnboarding(!SMEsOnboarding)} className={!SMEsOnboarding ? 'bg-[#f0f0fa] w-[50%] py-[1rem] text-center cursor-pointer rounded-tr-[0.5rem] text-[blue] border-b-[1px] border-[#6a6afb]' : 'w-[50%] py-[1rem] text-center cursor-pointer'} >Investors</h1>
+                        <h1 onClick={(e) => setsignin(!signin)} className={signin ? 'bg-[#f0f0fa] w-[50%] py-[1rem] text-center cursor-pointer rounded-tl-[0.5rem] text-[blue] border-b-[1px] border-[#6a6afb]' : 'w-[50%] py-[1rem] text-center cursor-pointer'} >Signup</h1>
+                        <h1 onClick={(e) => setsignin(!signin)} className={!signin ? 'bg-[#f0f0fa] w-[50%] py-[1rem] text-center cursor-pointer rounded-tr-[0.5rem] text-[blue] border-b-[1px] border-[#6a6afb]' : 'w-[50%] py-[1rem] text-center cursor-pointer'} >Login</h1>
                     </div>
                     <div className='text-center w-[100%]'>
                         {/* <form action=""> */}
                         <input type='email' placeholder='email' onInput={(e) => setemail(e.target.value)} value={email} className='bg-[none] outline-none pl-[0.7rem] mb-[2.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-md border-[#eae9e9]' />
                         <input type='password' placeholder='password' onInput={(e) => setpassword(e.target.value)} value={password} className='bg-[none] outline-none pl-[0.7rem] mb-[1.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-md border-[#eae9e9]' />
-                        {
+                        {/* {
                             signin ?
                                 <p className='text-center mb-[1.3rem] cursor-pointer' onClick={() => setsignin(false)}>Already have an account? <b className='text-[orange]'>Login</b></p>
                                 :
                                 <p className='text-center mb-[1.3rem] cursor-pointer' onClick={() => setsignin(true)}>Don't have an account? <b className='text-[orange]'>Sign up</b></p>
-                        }
+                        } */}
+                        {!signin && <p className='text-center mt-[0.5rem] cursor-pointer' >Forgot password ? </p>}
+
                         {
                             loading ?
-                                <button className='cursor pointer w-[90%] bg-[blue] text-white rounded-md py-[0.46rem] cursor-pointer'><div class="round animate-spin h-[1.85rem] w-[1.85rem] m-[auto] border-[3px] rounded-[50%]  border-x-[blue] border-t-[blue] border-[white] "></div></button>
+                                <button className=' w-[90%] bg-[blue] text-white rounded-md py-[0.46rem] cursor-pointer'><div class="round animate-spin h-[1.85rem] w-[1.85rem] m-[auto] border-[3px] rounded-[50%]  border-x-[blue] border-t-[blue] border-[white] "></div></button>
                                 :
-                                <button onClick={(e) => handleButton(e)} className='cursor pointer w-[90%] bg-[blue] text-white rounded-md py-[0.5rem] text-[1.2rem] cursor-pointer'>{signin ? 'Create account' : 'Login'}</button>
+                                <button onClick={(e) => handleButton(e)} className='mt-[1rem] cursor pointer w-[90%] bg-[blue] text-white rounded-md py-[0.5rem] text-[1.2rem] cursor-pointer'>{signin ? 'Create account' : 'Login'}</button>
                         }
                         {/* </form> */}
                     </div>
                 </div>
             </div>
             <PopUpMessageWithAutoCancel popUpMsg={popUpMsg} displayPopUp={displayPopUp} type={popUpType} duration={3000} />
-            {!signin && <p className='text-center my-[1rem] cursor-pointer' >Forgot password ? </p>}
         </div>
     )
 }

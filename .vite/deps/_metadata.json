@@ -1,29 +1,53 @@
 {
-  "hash": "64e6edb9",
+  "hash": "69092597",
   "configHash": "ee362973",
-  "lockfileHash": "0fbb8460",
-  "browserHash": "9a055904",
+  "lockfileHash": "3b6dbf05",
+  "browserHash": "db4dacfd",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "67144f8f",
+      "fileHash": "e7940ba3",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "18716cf8",
+      "fileHash": "0a8ac189",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.mjs",
       "file": "react-router-dom.js",
-      "fileHash": "326a7d6d",
+      "fileHash": "e1387779",
+      "needsInterop": false
+    },
+    "@mui/material/Box": {
+      "src": "../../node_modules/@mui/material/esm/Box/index.js",
+      "file": "@mui_material_Box.js",
+      "fileHash": "fc98234e",
+      "needsInterop": false
+    },
+    "@mui/material/Snackbar": {
+      "src": "../../node_modules/@mui/material/esm/Snackbar/index.js",
+      "file": "@mui_material_Snackbar.js",
+      "fileHash": "009f4848",
+      "needsInterop": false
+    },
+    "@mui/material/Alert": {
+      "src": "../../node_modules/@mui/material/esm/Alert/index.js",
+      "file": "@mui_material_Alert.js",
+      "fileHash": "017fffd6",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-MTDV6EUQ": {
+      "file": "chunk-MTDV6EUQ.js"
+    },
+    "chunk-SIFVR4SS": {
+      "file": "chunk-SIFVR4SS.js"
+    },
     "chunk-4J6BLW67": {
       "file": "chunk-4J6BLW67.js"
     },
