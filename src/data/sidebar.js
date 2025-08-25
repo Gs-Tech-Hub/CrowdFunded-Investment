@@ -23,4 +23,10 @@ export const SideBarData = [
         text: 'My investment',
         link: '/DashBoard/investment'
     },
+    {
+        id: 5,
+        // imgComponent:FeedIcon,
+        text: 'Admin',
+        link: '/DashBoard/admin'
+    },
 ]

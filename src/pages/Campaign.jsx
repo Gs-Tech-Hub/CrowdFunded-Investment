@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import { BreadCrumb } from '../AllFiles'
 const Campaign = () => {
     const data = useParams()
     const { id } = data
@@ -7,8 +8,9 @@ const Campaign = () => {
 
     return (
         <div>
-            <div className='w-[95%] m-[auto]'>
-                <div className='w-[100%] m-[auto] h-[35rem] mt-[3rem] mb-[2rem]'><img className='rounded-[1rem] h-[100%] w-[100%]' src='/image/pexels-pixabay-416405.jpg' alt="" /></div>
+            <div className='w-[95%] m-[auto] pt-[2rem]'>
+                <BreadCrumb />
+                <div className='w-[100%] m-[auto] h-[35rem] mt-[1.6rem] mb-[2rem]'><img className='rounded-[1rem] h-[100%] w-[100%]' src='/image/pexels-pixabay-416405.jpg' alt="" /></div>
                 <div className='flex items-start justify-between mb-[1.3rem]'>
                     <h2 className='font-bold text-[1.4rem]'>An AI aided alternative to figma</h2>
                     <button className='cursor pointer bg-[blue] text-white rounded-[0.5rem] py-[0.38rem] px-[2.8rem] text-[1.2rem] cursor-pointer'>Invest</button>

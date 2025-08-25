@@ -52,7 +52,7 @@ const Login = () => {
                             loading ?
                                 <button className=' w-[90%] bg-[blue] text-white rounded-md py-[0.46rem] cursor-pointer'><div class="round animate-spin h-[1.85rem] w-[1.85rem] m-[auto] border-[3px] rounded-[50%]  border-x-[blue] border-t-[blue] border-[white] "></div></button>
                                 :
-                                <button onClick={(e) => handleButton(e)} className='mt-[1rem] cursor pointer w-[90%] bg-[blue] text-white rounded-md py-[0.5rem] text-[1.2rem] cursor-pointer'>{signin ? 'Create account' : 'Login'}</button>
+                                <button onClick={(e) => handleButton(e)} className='mt-[1rem] cursor pointer w-[90%] bg-[blue] text-white rounded-md py-[0.5rem] text-[1.2rem]'>{signin ? 'Create account' : 'Login'}</button>
                         }
                         {/* </form> */}
                     </div>

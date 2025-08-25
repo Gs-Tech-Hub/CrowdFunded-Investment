@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import {RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Login, CreateCampaigns, AllCampaigns, Campaign, DashboardLayout, Investment } from './AllFiles';
+import { Login, CreateCampaigns, AllCampaigns, Campaign, DashboardLayout, Investment, Admin } from './AllFiles';
 import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -31,6 +31,10 @@ function App() {
         {
           path: 'investment',
           element: <Investment />,
+        },
+        {
+          path: 'admin',
+          element: <Admin />,
         },
         {
           path: 'Campaign/:id',

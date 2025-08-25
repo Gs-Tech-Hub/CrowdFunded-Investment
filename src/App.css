@@ -1,4 +1,25 @@
 .active {
     background-color: white;
+    border-radius: 0.3rem;
+    /* color: #79ddf9; */
     color: blue;
+}
+
+.adminCard thead th {
+    border-bottom: 1px solid gray;
+    padding: 0.9rem 0rem;
+    padding-right: 2rem;
+}
+
+.adminCard tbody td {
+    border-bottom: 1px solid gray;
+    padding: 0.5rem;
+}
+
+select option {
+    outline: none;
+}
+
+select option:focus {
+    outline: none;
 }
