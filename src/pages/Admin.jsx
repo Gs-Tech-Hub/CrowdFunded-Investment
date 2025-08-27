@@ -1,7 +1,24 @@
-import React from 'react'
-import { adminTableBody, adminTableHeader } from '../data/admin'
+import { useState } from 'react'
+import { adminTableBody } from '../data/admin'
+import { Link } from 'react-router-dom'
+import { AdminCard, PopUpMessageWithAutoCancel } from '../AllFiles'
+import { cancelPopUP, displayPopUpMessage } from '../helper function/pop up'
+
+
 
 const Admin = () => {
+    const [displayPopUp, setdisplayPopUp] = useState(false)
+    const [popUpMsg, setpopUpMsg] = useState('campaign successfully deleted')
+    const [popUpType, setpopUpType] = useState('error')
+    const deleteCampaign = () => {
+        setdisplayPopUp(true)
+        cancelPopUP(setdisplayPopUp, 1000)
+    }
+    const saveCampaign = () => {
+        displayPopUpMessage('campaign update successfully saved', setpopUpMsg, setpopUpType, setdisplayPopUp, true)
+        cancelPopUP(setdisplayPopUp, 1000)
+    }
+
     return (
         <div className='m-[auto] w-[90%] pt-[2rem]'>
             <h1>Admin</h1>
@@ -16,44 +33,9 @@ const Admin = () => {
                     </select>
                 </div> */}
             </div>
-            <div className='adminCard'>
-                <table className='m-[auto]'>
-                    <thead>
-                        {
-                            adminTableHeader.map(item => {
-                                return <tr key={item.id}>
-                                    <th>{item.number}</th><th>{item.CampaignName}</th><th>{item.date}</th><th>{item.status}</th><th>{item.action}</th><th></th><th></th><th></th>
-                                </tr>
-                            })
-                        }
-                    </thead>
-                    <tbody>
-                        {
-                            adminTableBody.map(item => {
-                                return <tr key={item.id}>
-                                    <td>{item.number}</td>
-                                    <td>{item.CampaignName}</td>
-                                    <td>{item.date}</td>
-                                    <td>{item.status}</td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">update status</option>
-                                            <option value="pending">pending</option>
-                                            <option value="active">active</option>
-                                            <option value="rejected">rejected</option>
-                                        </select>
-                                    </td>
-                                    <td><button>view</button></td>
-                                    <td><button>delete</button></td>
-                                    <td><button>save</button></td>
-                                </tr>
-                            })
-                        }
-                    </tbody>
+            <AdminCard adminTableBody={adminTableBody} deleteCampaign={deleteCampaign} saveCampaign={saveCampaign} />
+            <PopUpMessageWithAutoCancel popUpMsg={popUpMsg} displayPopUp={displayPopUp} type={popUpType} duration={3000} />
 
-                </table>
-
-            </div>
 
 
 

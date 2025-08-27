@@ -13,12 +13,12 @@ const CreateCampaigns = () => {
         <div>
             <div>
                 <h1 className='text-center text-[1.8rem] my-[1rem] font-bold'>Create Campaigns</h1>
-                <div className='text-center w-[90%] m-[auto] mt-[9rem]'>
+                <div className='text-center w-[90%] m-[auto] mt-[9rem] max-[310px]:w-[98%]'>
                     <input type='text' placeholder='Campaign Title' className='bg-[none] outline-none px-[1rem] mb-[2.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-[2rem] border-[lightgray]' />
                     <input type='text' placeholder='Campaign goal' className='bg-[none] outline-none px-[1rem] mb-[2.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-[2rem] border-[lightgray]' />
                     <input type='number' placeholder='Campaign amount goal in &#8358;' className='bg-[none] outline-none px-[1rem] mb-[2.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-[2rem] border-[lightgray]' />
                     <textarea type='text' placeholder='Campaign Description' className='bg-[none] h-[10rem] resize-none outline-none px-[1rem] mb-[2.3rem] py-[0.7rem] w-[90%] border-[1px] m-[auto] rounded-[1rem] border-[lightgray]' />
-                    <div className='pb-[2rem] w-[90%] m-[auto] border-3 border-dashed border-[lightgray] rounded-[1rem] text-center py-[1.3rem] mb-[2.3rem]'>
+                    <div className='pb-[2rem] w-[90%] m-[auto] border-3 border-dashed border-[lightgray] rounded-[1rem] text-center py-[1.3rem] mb-[2.3rem] max-[563px]:px-[0.6rem]'>
                         <p className='mb-[1.3rem] font-bold'>Choose an image(s) to upload</p>
                         <p className='mb-[1.3rem] text-[#908e8e]'>JPG, JPEG, PNG, GIF, BMP, WEBP, SVG, TIFF, ICO, HEIC, AVIF</p>
                         <div id="fileupload " >
@@ -28,16 +28,16 @@ const CreateCampaigns = () => {
                             </label>
                         </div>
                     </div>
-                    <div className='w-[90%] m-[auto] border-[1px] border-[lightgray] rounded-[1rem] py-[1.3rem] px-[1rem] mb-[2.3rem]'>
+                    <div className='w-[90%] m-[auto] border-[1px] border-[lightgray] rounded-[1rem] py-[1.3rem] px-[1rem] mb-[2.3rem] max-[350px]:px-[0.4rem] '>
                         <h3 className='font-bold mb-[1rem]'>Campaign fundraising period</h3>
-                        <div className='flex items-center justify-around'>
+                        <div className='flex items-center justify-around max-[350px]:justify-between'>
                             <div className='text-start '>
                                 <p className=' text-[#6d6969]'>start date</p>
-                                <input className='cursor-pointer outline-none' type="date" name="" id="" />
+                                <input className='cursor-pointer outline-none max-[435px]:w-[7.2rem]' type="date" name="" id="" />
                             </div>
                             <div className='text-start '>
                                 <p className='text-[#6d6969]'>end date</p>
-                                <input className='cursor-pointer outline-none' type="date" name="" id="" />
+                                <input className='cursor-pointer outline-none max-[435px]:w-[7.2rem]' type="date" name="" id="" />
                             </div>
                         </div>
                     </div>

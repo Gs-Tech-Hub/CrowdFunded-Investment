@@ -21,7 +21,7 @@ export const adminTableBody = [
     {
         id: 2,
         number: 2,
-        CampaignName: 'An ai aided creative software',
+        CampaignName: 'An ai aided creative software An ai aided creative software An ai aided creative software An ai aided creative softwareAn ai aided creative software',
         date: '15-08-2025',
         status: 'Active',
         // action:'Actions'

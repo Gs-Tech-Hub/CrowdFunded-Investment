@@ -13,7 +13,12 @@
 
 .adminCard tbody td {
     border-bottom: 1px solid gray;
-    padding: 0.5rem;
+    padding: 1rem 0rem;
+    padding-right: 0.8rem;
+}
+
+button {
+    cursor: pointer;
 }
 
 select option {

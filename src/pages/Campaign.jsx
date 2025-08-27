@@ -1,16 +1,33 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { BreadCrumb } from '../AllFiles'
+import { BreadCrumb, ImageSlider } from '../AllFiles'
 const Campaign = () => {
     const data = useParams()
     const { id } = data
     console.log(id)
+    let sliderImg = [
+        {
+            id: 1,
+            src: '/image/pexels-pixabay-416405.jpg ',
+        },
+        {
+            id: 2,
+            src: '/image/marek-piwnicki-zIiKZtB_v-Y-unsplash.jpg',
+        },
+        {
+            id: 3,
+            src: '/image/pexels-aleksandar-pasaric-2041556.jpg',
+        },
+    ]
 
     return (
         <div>
             <div className='w-[95%] m-[auto] pt-[2rem]'>
                 <BreadCrumb />
-                <div className='w-[100%] m-[auto] h-[35rem] mt-[1.6rem] mb-[2rem]'><img className='rounded-[1rem] h-[100%] w-[100%]' src='/image/pexels-pixabay-416405.jpg' alt="" /></div>
+                {/* <div className='w-[100%] m-[auto] h-[35rem] mt-[1.6rem] mb-[2rem]'><img className='rounded-[1rem] h-[100%] w-[100%]' src='/image/pexels-pixabay-416405.jpg' alt="" /></div> */}
+                <div className="pt-[1rem] h-[fit-content] mt-[1.6rem] mb-[2rem] w-[95%] m-[auto] pb-[1rem] max-[1032px]:w-[90%] max-[490px]:pt-[4.5rem]">
+                    <ImageSlider sliderImg={sliderImg} />
+                </div>
                 <div className='flex items-start justify-between mb-[1.3rem]'>
                     <h2 className='font-bold text-[1.4rem]'>An AI aided alternative to figma</h2>
                     <button className='cursor pointer bg-[blue] text-white rounded-[0.5rem] py-[0.38rem] px-[2.8rem] text-[1.2rem] cursor-pointer'>Invest</button>

@@ -7,10 +7,10 @@ const CampaignCard = ({ allcampaigns }) => {
             <div className='flex items-center justify-center flex-wrap'>
                 {
                     allcampaigns.map(item => {
-                        return <div key={item.id} className='w-[28%] mx-[1.5%] my-[2.5rem] border-[1px] m-[auto] rounded-[1rem] border-[lightgray] p-[0.8rem]'>
-                            <div className='w-[100%] m-[auto] h-[15rem]'><img className='rounded-[1rem] h-[100%] w-[100%]' src={item.img} alt="" /></div>
-                            <div className='px-[0.6rem]'>
-                                <h3 className='font-bold text-[1.1rem]'>
+                        return <div key={item.id} className='w-[22rem] mx-[1.5%] my-[2.5rem] border-[1px] m-[auto] rounded-[1rem] border-[lightgray] p-[0.8rem] max-[1417px]:mx-[2rem] max-[1073px]:mx-[1.5%] max-[1073px]:my-[1rem] max-[1073px]:w-[45%] max-[1073px]:p-[0.5rem]'>
+                            <div className='w-[100%] m-[auto] h-[15rem] max-[684px]:h-[13rem] max-[589px]:h-[11rem] max-[436px]:h-[9rem]'><img className='rounded-[1rem] h-[100%] w-[100%]' src={item.img} alt="" /></div>
+                            <div className='px-[0.6rem] w-[100%]'>
+                                <h3 className='font-bold text-[1.1rem] w-[100%]'>
                                     {/* {item.title} */}
                                     <LinesEllipsis
                                         text={item.title}
@@ -33,7 +33,7 @@ const CampaignCard = ({ allcampaigns }) => {
                                 </div>
                                 <div className='flex items-center justify-between'>
                                     <p className=' text-end cursor-pointer text-[blue]'>Share </p>
-                                    <p className='text-end cursor-pointer text-[blue]'><Link to={`/DashBoard/Campaign/${item.id}`}>View Campaign</Link></p>
+                                    <p className='text-end cursor-pointer text-[blue]'><Link to={`/DashBoard/Campaign/${item.id}`}>View</Link></p>
                                 </div>
                             </div>
                         </div>
