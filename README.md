@@ -34,4 +34,13 @@ src/
 4. react-router-dom: for navigating different routes in the front end
 5. react-lines-ellipsis: for shortening lengthy texts
 
+/src
+  /components  - Reusable UI components
+  /pages       - Route-level components
+  /assets      - Images, fonts, etc.
+  /hooks       - Custom React hooks
+  /utils       - Utility functions
+  /styles     - CSS/SCSS files or styled components
+  main.jsx     - Entry point
+  App.jsx      - Root component
 
