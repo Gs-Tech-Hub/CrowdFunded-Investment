@@ -57,3 +57,17 @@ src/
 │   └── logger/    # Logging system
 ├── app.ts         # Express application setup
 └── server.ts      # Server initialization
+
+## Folder Structure
+
+```plaintext
+/src
+  /components  - Reusable UI components
+  /pages       - Route-level components
+  /assets      - Images, fonts, etc.
+  /hooks       - Custom React hooks
+  /utils       - Utility functions
+  /styles      - CSS/SCSS files or styled components
+  main.jsx     - Entry point
+  App.jsx      - Root component
+
