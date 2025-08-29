@@ -12,8 +12,9 @@ to run this code
 4. run the project by running the command npm run dev
 note: the current version of the project is in the investors git branch, to switch to this branch run the command git checkout investors
 
-## folder structure
 ```plaintext
+## folder structure
+
 public/image  --for storing images
 src/
  ┣ component/ --for storing reusable components
@@ -35,40 +36,4 @@ src/
 4. react-router-dom: for navigating different routes in the front end
 5. react-lines-ellipsis: for shortening lengthy texts
 
-/src
-  /components  - Reusable UI components
-  /pages       - Route-level components
-  /assets      - Images, fonts, etc.
-  /hooks       - Custom React hooks
-  /utils       - Utility functions
-  /styles     - CSS/SCSS files or styled components
-  main.jsx     - Entry point
-  App.jsx      - Root component
-
-src/
-├── config/         # Application configuration
-├── interfaces/     # TypeScript interfaces
-├── models/         # Mongoose data models
-├── services/       # Business logic
-│   ├── commands/   # Command handlers
-│   └── LLM/        # Language model integration
-├── test/          # Test files
-├── utils/         # Utility functions
-│   ├── errors/    # Error handling
-│   └── logger/    # Logging system
-├── app.ts         # Express application setup
-└── server.ts      # Server initialization
-
-## Folder Structure
-
-```plaintext
-/src
-  /components  - Reusable UI components
-  /pages       - Route-level components
-  /assets      - Images, fonts, etc.
-  /hooks       - Custom React hooks
-  /utils       - Utility functions
-  /styles      - CSS/SCSS files or styled components
-  main.jsx     - Entry point
-  App.jsx      - Root component
 
