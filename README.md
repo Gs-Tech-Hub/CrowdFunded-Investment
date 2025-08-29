@@ -44,3 +44,16 @@ src/
   main.jsx     - Entry point
   App.jsx      - Root component
 
+src/
+├── config/         # Application configuration
+├── interfaces/     # TypeScript interfaces
+├── models/         # Mongoose data models
+├── services/       # Business logic
+│   ├── commands/   # Command handlers
+│   └── LLM/        # Language model integration
+├── test/          # Test files
+├── utils/         # Utility functions
+│   ├── errors/    # Error handling
+│   └── logger/    # Logging system
+├── app.ts         # Express application setup
+└── server.ts      # Server initialization
