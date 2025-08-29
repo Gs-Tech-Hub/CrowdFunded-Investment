@@ -8,8 +8,9 @@ to install this package you need to have a node version of 20.19.0 and above
 to run this code 
 1. git clone the project
 2. cd CrowdFunded-Investment
-3. install necessary dependencies by running npm install
-4. run the project by running the command ``` npm run dev ```note: the current version of the project is in the investors git branch, to switch to this branch run the command ```git checkout investors```
+3. install necessary dependencies by running ```npm install```
+4. run the project by running the command ``` npm run dev ```
+<br>**note**: the current version of the project is in the investors git branch, to switch to this branch run the command ```git checkout investors```
 
 ## folder structure
 ```plaintext
@@ -17,14 +18,21 @@ to run this code
 public/image  --for storing images
 src/
  ┣ component/ --for storing reusable components
+
  ┣ pages/  --for storing all screens
+
  ┣ helper function/  --for storing reusable functions
+
  ┣ data/  --for storing textual data used in the project
+
  ┣ context/  --for storing files for global state management
+
  ┣ assets/ --for storing various assets like font style,svg,image,videos etc
+
  ┣ AllFiles.jsx  -- impports and exports all files so they can all be imported from a single file
+
  ┣ App.jsx
- ┣ main.jsx
+
  ┣ main.jsx
 ```
 
