@@ -9,11 +9,11 @@ to run this code
 1. git clone the project
 2. cd CrowdFunded-Investment
 3. install necessary dependencies by running npm install
-4. run the project by running the command npm run dev
+4. run the project by running the command ```npm run dev
 note: the current version of the project is in the investors git branch, to switch to this branch run the command git checkout investors
 
-```plaintext
 ## folder structure
+```plaintext
 
 public/image  --for storing images
 src/
@@ -27,7 +27,7 @@ src/
  ┣ App.jsx
  ┣ main.jsx
  ┣ main.jsx
-
+```
 
 ## dependencies
 1. material ui: for reusable component
