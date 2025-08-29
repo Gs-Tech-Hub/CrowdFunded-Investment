@@ -13,6 +13,7 @@ to run this code
 note: the current version of the project is in the investors git branch, to switch to this branch run the command git checkout investors
 
 ## folder structure
+```plaintext
 public/image  --for storing images
 src/
  ┣ component/ --for storing reusable components
