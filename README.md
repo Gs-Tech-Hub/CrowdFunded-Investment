@@ -42,5 +42,7 @@ src/
 3. react-slick and slick-carousel: for creating slideable image gallery
 4. react-router-dom: for navigating different routes in the front end
 5. react-lines-ellipsis: for shortening lengthy texts
+6. react-spinners: for loading animation
+7. react-icons: for icons
 
 
